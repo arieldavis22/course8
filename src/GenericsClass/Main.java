@@ -28,6 +28,13 @@ public class Main {
         Team<FootballPlayer> fremantle = new Team<>("Fremantle");
 
         hawthorn.matchResult(fremantle, 1, 0);
-        hawthorn.matchResult(coolTeam, 3, 8);
+        hawthorn.matchResult(coolTeam, 9, 8);
+
+        System.out.println("Rankings:");
+        System.out.println(coolTeam.getName() + ": " + coolTeam.ranking());
+        System.out.println(hawthorn.getName() + ": " + hawthorn.ranking());
+        System.out.println(fremantle.getName() + ": " + fremantle.ranking());
+
+        System.out.println(coolTeam.compareTo(hawthorn));
     }
 }
